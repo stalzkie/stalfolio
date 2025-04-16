@@ -49,7 +49,7 @@
         <a href="/about" class="text-xl font-medium text-black">about me</a>
         <a href="/track-record" class="text-xl font-medium text-black">track record</a>
         <a href="/sample-work" class="text-xl font-medium text-black">sample work</a>
-        <a href="#" class="text-xl font-medium text-black">contact me</a>
+        <a href="/contact" class="text-xl font-medium text-black">contact me</a>
       </nav>
     </div>
   </header>
