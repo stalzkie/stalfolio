@@ -2,19 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Contact;
+use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
     public function store(Request $request)
     {
-        \App\Models\Contact::create($request->validate([
-            'name' => 'required|string',
+        $validated = $request->validate([
             'email' => 'required|email',
-            'message' => 'required|string'
-        ]));
-    
+            'name' => 'required|string',
+            'message' => 'required|string',
+        ]);
+
+        Contact::create($validated);
+
         return response()->json(['success' => true]);
     }
 }
