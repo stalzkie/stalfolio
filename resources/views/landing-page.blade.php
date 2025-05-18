@@ -50,6 +50,7 @@
     <div class="blur-lock">
         <section id="track-record">@include('partials.track-record')</section>
         <section id="sample-work">@include('partials.sample-work')</section>
+        <section id="project-showcase">@include('partials.projects-scroll')</section>
         <section id="contact">@include('partials.contact')</section>
     </div>
 

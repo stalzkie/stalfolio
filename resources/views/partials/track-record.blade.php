@@ -2,7 +2,7 @@
 <section id="track-record" class="bg-neutral-50 pt-20 pb-28 px-4 sm:px-6 md:px-10 lg:px-28">
   <!-- Title -->
   <div class="text-center mb-10">
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold text-[#1e1e1e]">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold text-[#1e1e1e] leading-tight mb-2">
       my track record
     </h1>
     <p class="text-base sm:text-xl md:text-2xl font-semibold text-[#1e1e1e4c] mt-2">
@@ -81,36 +81,32 @@
   }
 </style>
 
-  <!-- Scrolling Container -->
-  <div class="relative w-full overflow-hidden">
-    <div class="scroll-track flex gap-16 min-w-max animate-scroll px-20">
-      <!-- Locked Achievement Placeholders -->
-      <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
-      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+  <!-- Logos Section with Neutral Background -->
+  <section class="w-full bg-neutral-50 py-5 relative overflow-hidden" id="tech-logos">
+    <!-- Fade Masks -->
+    <div class="absolute top-0 bottom-0 left-0 w-1/6 z-10 pointer-events-none" style="background: linear-gradient(to right, #fafafa, transparent);"></div>
+    <div class="absolute top-0 bottom-0 right-0 w-1/6 z-10 pointer-events-none" style="background: linear-gradient(to left, #fafafa, transparent);"></div>
 
-
-      <!-- Visible Logo -->
-      <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
-
-
-      <!-- More Locked -->
-      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
-      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
-      <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
-      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
-
-
-      <!-- Repeat -->
-      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
-      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
-      <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
-      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
-      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
-      <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
-      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+    <!-- Scrolling Container -->
+    <div class="relative w-full overflow-hidden">
+      <div class="scroll-track flex gap-16 min-w-max animate-scroll px-20">
+        <!-- Logos and Placeholders -->
+        <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
+        <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+        <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
+        <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+        <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+        <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
+        <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+        <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+        <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
+        <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+        <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+        <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
+        <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 <style>

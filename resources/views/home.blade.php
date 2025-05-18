@@ -45,7 +45,13 @@
     <section id="sample-work">
         @include('partials.sample-work')
       <!-- Smooth Gradient Divider -->
-    <div class="w-full h-2 bg-gradient-to-b from-white to-neutral-50"></div>
+        <div class="w-full h-2 bg-gradient-to-b from-white to-neutral-50"></div>
+    </section>
+
+    <!-- Project Showcase -->
+    <section id="project-showcase">
+        @include('partials.projects-scroll')
+
     </section>
 
     <!-- Contact Section -->

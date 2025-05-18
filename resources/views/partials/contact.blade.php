@@ -2,8 +2,8 @@
 <section class="flex flex-col items-center justify-center w-full px-6 sm:px-12 xl:px-28 py-20 bg-neutral-50 relative">
     <!-- Title -->
     <div class="w-full text-center mb-10">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold text-stone-900">contact me</h1>
-        <p class="text-base sm:text-xl md:text-2xl font-semibold text-stone-900/30 mt-2">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold text-[#1e1e1e] leading-tight mb-2">contact me</h1>
+        <p class="text-base sm:text-xl md:text-2xl font-semibold text-[#1e1e1e4c] mt-2">
             want to work with me? send a message or email me at business@stalwrites.com
         </p>
     </div>

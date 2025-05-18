@@ -8,22 +8,22 @@
                 <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold text-[#1e1e1e] leading-tight mb-2">
                     who's stal?
                 </h1>
-                <p class="text-xl sm:text-2xl font-semibold text-[#1e1e1e4c]">
+                <p class="text-base sm:text-xl md:text-2xl font-semibold text-[#1e1e1e4c] mt-2">
                     a little snippet about me.
                 </p>
             </div>
             <div>
                 <p class="text-base sm:text-lg text-[#1e1e1e] leading-7 tracking-wide text-justify">
-                    I am an award-winning professional Freelance Writer with over 2
+                    I am an award-winning professional Freelance Writer with over 3
                     years of experience writing for Content Creators and Companies. My
                     work includes SEO, Copywriting, Blog Writing, Content Writing, and
                     Scriptwriting. This has resulted in my writeups garnering millions
                     of views online with my YouTube scripts alone surpassing
-                    10,000,000 views in total. <br><br>
-                    I also built a content creation agency from scratch which
-                    turned into a writing services company called StalWrites. After
-                    just one year of operations we have surpassed 1,000,000 Philippine
-                    Pesos in revenue.
+                    29,000,000 views in total. <br><br>
+                    As a computer science student, I have knowledge coding in PHP,
+                    Javascript, SQL, Python, C#, and more. Currently, I am looking at
+                    upskilling, taking courses in Data Analytics, Business Analaysis,
+                    and Business Intelligence.
                 </p>
             </div>
         </div>

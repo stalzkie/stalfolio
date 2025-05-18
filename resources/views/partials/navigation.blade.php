@@ -12,6 +12,7 @@
             <a href="#about" class="nav-link text-black">about me</a>
             <a href="#track-record" class="nav-link text-black">track record</a>
             <a href="#sample-work" class="nav-link text-black">portfolios & work</a>
+            <a href="#project-showcase" class="nav-link text-black">code & dev</a> <!-- ✅ NEW LINK -->
             <a href="#contact" class="nav-link text-black">contact me</a>
 
             @auth
@@ -50,6 +51,7 @@
         <a href="#about" class="block text-black text-lg font-medium">about me</a>
         <a href="#track-record" class="block text-black text-lg font-medium">track record</a>
         <a href="#sample-work" class="block text-black text-lg font-medium">portfolios & work</a>
+        <a href="#project-showcase" class="block text-black text-lg font-medium">code & dev</a> <!-- ✅ NEW LINK -->
         <a href="#contact" class="block text-black text-lg font-medium">contact me</a>
 
         @auth

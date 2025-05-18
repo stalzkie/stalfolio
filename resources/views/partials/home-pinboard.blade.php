@@ -100,7 +100,7 @@
     <div class="relative w-full overflow-hidden">
         <div class="scroll-track flex items-center gap-12 sm:gap-16 min-w-max animate-scroll px-6 sm:px-12 xl:px-28">
             @php
-                $logos = ['java', 'cpp', 'javascript', 'php', 'python', 'sql'];
+                $logos = ['java', 'cpp', 'javascript', 'php', 'python', 'sql', 'flutter'];
             @endphp
 
             @foreach (array_merge($logos, $logos) as $logo)

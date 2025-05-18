@@ -3,10 +3,10 @@
   <!-- Left Column: Portfolio Cards -->
   <div class="flex flex-col w-full lg:w-[544px] items-center lg:items-start gap-8">
     <div class="flex flex-col text-center lg:text-left gap-2">
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold text-[#1e1e1e] leading-[1.1]">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold text-[#1e1e1e] leading-tight mb-2">
         my sample works
       </h1>
-      <p class="text-xl sm:text-2xl font-semibold text-[#1e1e1e4c] leading-[1.5]">
+      <p class="text-base sm:text-xl md:text-2xl font-semibold text-[#1e1e1e4c] mt-2">
         some of my published outputs and more portfolios!
       </p>
     </div>
@@ -43,7 +43,7 @@
     <div class="text-sm text-[#1e1e1e80] font-normal text-center lg:text-left">
       try clicking a logo!
     </div>
-    <div class="grid grid-cols-3 gap-6 w-full max-w-[800px] mx-auto">
+    <div class="grid grid-cols-3 gap-12 w-full max-w-[800px] mx-auto">
       @foreach([
         ['fragster-logo.svg', 'https://www.fragster.com/mlbb-the-story-of-bren-esports-how-they-reached-the-top/'],
         ['gamer-org-logo.svg', 'https://www.gamer.org/the-best-teamfight-tactics-tft-lunar-festival-2025-comps/'],
@@ -63,14 +63,13 @@
         ['xppen-genshin-logo.svg', 'https://www.xp-pen.com/blog/genshin-new-character-chiori.html'],
         ['xppen-afkarena-logo.svg', 'https://www.xp-pen.com/blog/afk-arena-beginner-guide.html'],
       ] as [$logo, $url])
-        <a href="{{ $url }}" target="_blank" class="logo-item flex items-center justify-center p-2 rounded border-2 border-black">
+        <a href="{{ $url }}" target="_blank" class="logo-item flex items-center justify-center">
           <img src="{{ asset('images/client-logo/' . $logo) }}" alt="{{ $logo }}" class="max-h-10 h-auto">
         </a>
       @endforeach
     </div>
   </div>
 
-  <!-- Styles -->
   <style>
     .portfolio-card {
       transition: transform 0.3s ease;
@@ -84,11 +83,15 @@
     .portfolio-card:hover .portfolio-button-text {
       color: white;
     }
+
     .logo-item {
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      opacity: 0.5;
     }
+
     .logo-item:hover {
       transform: scale(1.2);
+      opacity: 1;
     }
   </style>
 </section>
