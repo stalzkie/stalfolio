@@ -36,22 +36,22 @@
 
             <!-- Responsive Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-10 gap-y-10 sm:gap-x-10 sm:gap-y-16 justify-items-center w-full">
-                <a href="https://www.linkedin.com/in/stalingrad-dollosa-628b89267/" class="social-icon rotate-[15deg]">
+                <a href="https://www.linkedin.com/in/stalingrad-dollosa-628b89267/" target="_blank" rel="noopener noreferrer" class="social-icon rotate-[15deg]">
                     <img src="{{ asset('images/linkedin-logo.svg') }}" alt="LinkedIn logo" class="w-28 sm:w-32 h-auto max-h-[128px]">
                 </a>
-                <a href="https://www.facebook.com/Sg.Com.Ph/" class="social-icon rotate-[-10deg]">
+                <a href="https://www.facebook.com/Sg.Com.Ph/" target="_blank" rel="noopener noreferrer" class="social-icon rotate-[-10deg]">
                     <img src="{{ asset('images/facebook-logo.svg') }}" alt="Facebook logo" class="w-28 sm:w-32 h-auto max-h-[128px]">
                 </a>
-                <a href="https://www.instagram.com/stal.proper/" class="social-icon rotate-[7deg]">
+                <a href="https://www.instagram.com/stal.proper/" target="_blank" rel="noopener noreferrer" class="social-icon rotate-[7deg]">
                     <img src="{{ asset('images/instagram-logo.svg') }}" alt="Instagram logo" class="w-28 sm:w-32 h-auto max-h-[128px]">
                 </a>
-                <a href="https://www.fiverr.com/hirayacreatives?public_mode=true" class="social-icon rotate-[-18.7deg]">
+                <a href="https://www.fiverr.com/hirayacreatives?public_mode=true" target="_blank" rel="noopener noreferrer" class="social-icon rotate-[-18.7deg]">
                     <img src="{{ asset('images/fiverr-logo.svg') }}" alt="Fiverr logo" class="w-28 sm:w-32 h-auto max-h-[128px]">
                 </a>
-                <a href="https://www.upwork.com/freelancers/~010c05a8fd69e832e8" class="social-icon rotate-[20deg]">
+                <a href="https://www.upwork.com/freelancers/~010c05a8fd69e832e8" target="_blank" rel="noopener noreferrer" class="social-icon rotate-[20deg]">
                     <img src="{{ asset('images/upwork-logo.svg') }}" alt="Upwork logo" class="w-28 sm:w-32 h-auto max-h-[128px]">
                 </a>
-                <a href="https://ytjobs.co/talent/profile/254082" class="social-icon rotate-[-12deg]">
+                <a href="https://ytjobs.co/talent/profile/254082" target="_blank" rel="noopener noreferrer" class="social-icon rotate-[-12deg]">
                     <img src="{{ asset('images/youtube-final.svg') }}" alt="YouTube logo" class="w-28 sm:w-32 h-auto max-h-[128px]">
                 </a>
             </div>
