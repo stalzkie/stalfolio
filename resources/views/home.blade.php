@@ -25,26 +25,27 @@
     <section id="home">
         @include('partials.home-pinboard')
     </section>
-
+    <div class="w-full h-8 bg-white"></div>
+    
     <!-- About Section -->
     <section id="about">
         @include('partials.about')
     <!-- Smooth Gradient Divider -->
-    <div class="w-full h-16 bg-gradient-to-b from-white to-neutral-50"></div>
+    <div class="w-full h-6 bg-gradient-to-b from-white to-neutral-50"></div>
     </section>
 
     <!-- Track Record Section -->
     <section id="track-record">
         @include('partials.track-record')
         <!-- Reverse Gradient Divider -->
-    <div class="w-full h-10 bg-gradient-to-b from-neutral-50 to-white"></div>
+    <div class="w-full h-6 bg-gradient-to-b from-neutral-50 to-white"></div>
     </section>
 
     <!-- Sample Work Section -->
     <section id="sample-work">
         @include('partials.sample-work')
       <!-- Smooth Gradient Divider -->
-    <div class="w-full h-7 bg-gradient-to-b from-white to-neutral-50"></div>
+    <div class="w-full h-2 bg-gradient-to-b from-white to-neutral-50"></div>
     </section>
 
     <!-- Contact Section -->

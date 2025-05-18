@@ -2,11 +2,16 @@
 <!-- Track Record Section -->
 <section id="track-record" class="bg-neutral-50 pt-20 pb-28">
   
-  <!-- Title -->
-  <div class="text-center mb-10">
-    <h1 class="text-6xl font-semibold text-[#1e1e1e]">my track record</h1>
-    <p class="text-2xl font-semibold text-[#1e1e1e4c] mt-2">here’s what I did before.</p>
-  </div>
+<!-- Title -->
+<div class="text-center mb-10">
+  <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-semibold text-[#1e1e1e]">
+    my track record
+  </h1>
+  <p class="text-base sm:text-2xl md:text-2xl lg:text-2xl font-semibold text-[#1e1e1e4c] mt-2">
+    here’s what I did before.
+  </p>
+</div>
+
 
   <!-- Three Columns -->
   <div class="flex justify-center gap-10 px-28">
@@ -69,7 +74,7 @@
     transition: all 0.3s ease-in-out;
   }
   .record-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     opacity: 1;
   }
   .icon-position {

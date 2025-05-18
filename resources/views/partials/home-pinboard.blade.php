@@ -1,17 +1,23 @@
 <!-- Home Section -->
-<section id="home" class="flex flex-col md:flex-row px-6 md:px-12 lg:px-36 py-10 md:py-20 gap-8">
+<section id="home" class="flex flex-col md:flex-row px-6 sm:px-12 xl:px-28 py-10 md:py-20 gap-8">
     <!-- Left Column -->
-    <div class="w-full md:w-1/2 md:pr-8">
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold text-[#1e1e1e] mb-8">hi there,<br>nice to meet you!</h1>
+    <div class="w-full md:w-1/2 md:pr-8 flex flex-col items-left md:items-left text-left md:text-left">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold text-[#1e1e1e] mb-6">
+            hi there,<br>nice to meet you!
+        </h1>
         <div class="space-y-4">
             @foreach (['content writer', 'entrepreneur', 'seo expert', 'copywriter', 'computer science', 'business analyst'] as $role)
-                <p><span class="hover-grow inline-block text-xl sm:text-2xl md:text-3xl font-semibold text-[#1e1e1e4c] cursor-pointer">{{ $role }}</span></p>
+                <p>
+                    <span class="hover-grow inline-block text-2xl sm:text-2xl md:text-3xl font-semibold text-[#1e1e1e4c] cursor-pointer">
+                        {{ $role }}
+                    </span>
+                </p>
             @endforeach
         </div>
     </div>
 
     <!-- Right Column -->
-    <div class="w-full md:w-1/2 md:pl-8">
+    <div class="w-full md:w-1/2 md:pl-8 flex flex-col items-center md:items-start text-center md:text-left">
         <p class="text-xl sm:text-2xl md:text-3xl font-semibold text-[#1e1e1e4c] mb-4">leave a message for me.</p>
         <div class="bg-[#fda5a4] rounded-[30px] border-2 border-black p-6 w-full min-h-[363px] max-h-[363px] overflow-y-auto scroll-hide">
             <div class="flex justify-end gap-2 mb-4">
@@ -57,7 +63,9 @@
         </div>
 
         @auth
-        <button id="add-pin-btn" class="mt-4 w-[150px] bg-[#1e1e1e] text-white font-semibold py-2.5 rounded-full hover:scale-110 transition-transform duration-200">add a pin.</button>
+        <button id="add-pin-btn" class="mt-4 w-[150px] bg-[#1e1e1e] text-white font-semibold py-2.5 rounded-full hover:scale-110 transition-transform duration-200">
+            add a pin.
+        </button>
 
         <!-- Modal -->
         <div id="pin-modal" class="fixed top-0 left-0 w-full h-full bg-black/50 hidden z-50 flex items-center justify-center">
@@ -80,6 +88,8 @@
     </div>
 </section>
 
+<div class="w-full h-6 bg-white"></div>
+
 <!-- Logos Section: Auto-Scrolling Version (Bug-Free) -->
 <section class="w-full bg-white py-5 relative overflow-hidden" id="tech-logos">
     <!-- Fade Masks -->
@@ -88,17 +98,16 @@
 
     <!-- Scroll Container -->
     <div class="relative w-full overflow-hidden">
-        <div class="scroll-track flex items-center gap-12 sm:gap-16 min-w-max animate-scroll px-6 sm:px-12">
+        <div class="scroll-track flex items-center gap-12 sm:gap-16 min-w-max animate-scroll px-6 sm:px-12 xl:px-28">
             @php
-                $logos = ['java', 'cpp', 'cpp', 'cpp', 'flutter', 'flutter', 'flutter', 'sql', 'sql'];
+                $logos = ['java', 'cpp', 'javascript', 'php', 'python', 'sql'];
             @endphp
 
-            {{-- Loop logos twice for seamless loop --}}
             @foreach (array_merge($logos, $logos) as $logo)
                 <img
                     src="/images/logos/{{ $logo }}.svg"
                     alt="{{ ucfirst($logo) }}"
-                    class="h-12 sm:h-16 md:h-20 w-auto transition-transform duration-200 hover:scale-110"
+                    class="h-24 sm:h-16 md:h-24 w-auto transition-transform duration-200 hover:scale-110"
                 >
             @endforeach
         </div>
@@ -106,7 +115,6 @@
 </section>
 
 <style>
-/* Smooth continuous scroll */
 .scroll-track {
     animation: scrollLeft 40s linear infinite;
     white-space: nowrap;
