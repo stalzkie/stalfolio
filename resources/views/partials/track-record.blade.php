@@ -80,3 +80,51 @@
     right: 10px;
   }
 </style>
+
+  <!-- Scrolling Container -->
+  <div class="relative w-full overflow-hidden">
+    <div class="scroll-track flex gap-16 min-w-max animate-scroll px-20">
+      <!-- Locked Achievement Placeholders -->
+      <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
+      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+
+
+      <!-- Visible Logo -->
+      <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
+
+
+      <!-- More Locked -->
+      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+      <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
+      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+
+
+      <!-- Repeat -->
+      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+      <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
+      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+      <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
+      <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  .scroll-track {
+    animation: scrollLeft 40s linear infinite;
+  }
+
+
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
