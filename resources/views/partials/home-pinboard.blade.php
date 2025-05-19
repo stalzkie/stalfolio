@@ -31,7 +31,7 @@
                         $colors = ['#FFDFB2', '#FFFFFF', '#C5FFF1'];
                         $bg = $colors[$index % count($colors)];
                     @endphp
-                    <div class="rounded-[15px] p-4 border-2 border-black min-h-[100px] w-full max-w-full sm:max-w-xs break-words" style="background-color: {{ $bg }};">
+                    <div class="pin-card rounded-[15px] p-4 border-2 border-black min-h-[100px] w-full max-w-full sm:max-w-xs break-words" style="background-color: {{ $bg }};">
                         <div class="flex items-start gap-2 mb-2">
                             <div class="w-5 h-5 bg-[#cbb28e] rounded-full border-2 border-black flex-shrink-0"></div>
                             <div class="flex-1 font-semibold text-black text-[12px] break-words whitespace-normal">{{ $pin->name }}</div>

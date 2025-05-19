@@ -8,13 +8,15 @@ use Illuminate\Support\Facades\Auth;
 
 class PinController extends Controller
 {
-    // Display all pins
+    // Display all pins on the authenticated home view
     public function index()
     {
-        // Pass all pins to the home view
-        return view('home', ['pins' => Pin::latest()->get()]);
+        return view('home', [
+            'pins' => Pin::latest()->get(),
+        ]);
     }
 
+    // Store a newly created pin
     public function store(Request $request)
     {
         $validated = $request->validate([
@@ -34,7 +36,7 @@ class PinController extends Controller
     {
         $pin = Pin::findOrFail($id);
 
-        // Check if the authenticated user owns the pin
+        // Only allow the pin owner to update
         if ($pin->user_id !== Auth::id()) {
             abort(403, 'Unauthorized action.');
         }
@@ -45,15 +47,7 @@ class PinController extends Controller
 
         $pin->update($validated);
 
-        // 🔍 Debugging: Check if the message was actually updated
-        $freshPin = Pin::find($id);
-        dd([
-            'submitted_message' => $validated['message'],
-            'saved_message_in_db' => $freshPin->message,
-        ]);
-
-        // Remove this line after confirming it works
-        // return redirect()->route('home')->with('success', 'Pin edited successfully!');
+        return redirect()->route('home')->with('success', 'Pin updated successfully!');
     }
 
     // Delete a pin
@@ -61,7 +55,7 @@ class PinController extends Controller
     {
         $pin = Pin::findOrFail($id);
 
-        // Check if the authenticated user owns the pin
+        // Only allow the pin owner to delete
         if ($pin->user_id !== Auth::id()) {
             abort(403, 'Unauthorized action.');
         }
