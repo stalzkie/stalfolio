@@ -52,7 +52,7 @@
                                         @csrf
                                         @method('PUT')
                                         <input type="hidden" name="message" class="updated-message">
-                                        <button type="button" class="text-blue-600 text-sm update-pin">Update</button> <!-- Fixed type -->
+                                        <button type="button" class="text-blue-600 text-sm update-pin">Update</button> <!-- Important fix -->
                                     </form>
                                 </div>
                             @endif

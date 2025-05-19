@@ -20,16 +20,15 @@ class PinController extends Controller
         $validated = $request->validate([
             'message' => 'required|string',
         ]);
-    
+
         $validated['user_id'] = Auth::id();
         $validated['name'] = Auth::user()->email;
-    
+
         Pin::create($validated);
-    
-        // Remove the dd() completely
+
         return redirect()->route('home')->with('success', 'Pin added successfully!');
     }
-    
+
     // Update an existing pin
     public function update(Request $request, $id)
     {
@@ -46,7 +45,15 @@ class PinController extends Controller
 
         $pin->update($validated);
 
-        return redirect()->route('home')->with('success', 'Pin edited successfully!');
+        // 🔍 Debugging: Check if the message was actually updated
+        $freshPin = Pin::find($id);
+        dd([
+            'submitted_message' => $validated['message'],
+            'saved_message_in_db' => $freshPin->message,
+        ]);
+
+        // Remove this line after confirming it works
+        // return redirect()->route('home')->with('success', 'Pin edited successfully!');
     }
 
     // Delete a pin

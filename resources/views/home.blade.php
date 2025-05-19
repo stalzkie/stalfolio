@@ -24,8 +24,10 @@
     <!-- Home Section -->
     <section id="home">
         @include('partials.home-pinboard')
+        @include('partials.pinboard-scripts')
     </section>
     <div class="w-full h-8 bg-white"></div>
+
     
     <!-- About Section -->
     <section id="about">
@@ -62,8 +64,8 @@
     <!-- Footer -->
     @include('partials.footer')
 
-    <!-- Pinboard Scripts -->
-    @include('partials.pinboard-scripts')
+    <!-- Blade Stack Scripts -->
+    @stack('scripts')
 
     <!-- Scripts -->
     @include('partials.scripts')
