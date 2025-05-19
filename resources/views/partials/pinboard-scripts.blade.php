@@ -13,14 +13,19 @@
         cancelPin.addEventListener('click', () => modal.classList.add('hidden'));
     }
 
-    // Handle pin updates
+    // Handle pin updates (revised logic)
     document.querySelectorAll('.update-pin').forEach(button => {
-        const form = button.closest('form');
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
+        button.addEventListener('click', function () {
+            const form = button.closest('form');
             const wrapper = form.closest('div');
             const paragraph = wrapper.querySelector('[contenteditable]');
             const messageInput = form.querySelector('.updated-message');
+
+            if (!paragraph || !messageInput) {
+                alert("Could not find the editable paragraph or input.");
+                return;
+            }
+
             const updatedMessage = paragraph.textContent.trim();
 
             if (!updatedMessage) {
