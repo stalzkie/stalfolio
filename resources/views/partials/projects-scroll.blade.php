@@ -34,7 +34,7 @@
                 ],
                 [
                     'image' => 'incident.png',
-                    'label' => 'Incident VR',
+                    'label' => 'Incident Game',
                     'description' => 'First-Person Thriller Puzzle Game',
                     'bars' => ['Blender', 'Unity Game Engine', 'C#, HLSL']
                 ]
