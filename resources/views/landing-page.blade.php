@@ -40,20 +40,27 @@
     <section id="home">
         @include('partials.home-pinboard')
     </section>
+    <div class="w-full h-8 bg-white"></div>
 
     <!-- About Section (fully visible) -->
     <section id="about">
         @include('partials.about')
+        <div class="w-full h-6 bg-gradient-to-b from-white to-neutral-50"></div>
     </section>
 
     <!-- Blurred Sections -->
-    <div class="blur-lock">
-        <section id="track-record">@include('partials.track-record')</section>
-        <section id="sample-work">@include('partials.sample-work')</section>
+        <section id="track-record">@include('partials.track-record')
+            <div class="w-full h-6 bg-gradient-to-b from-neutral-50 to-white"></div>
+        </section>
+        <section id="sample-work">@include('partials.sample-work')
+            <div class="w-full h-2 bg-gradient-to-b from-white to-neutral-50"></div>
+        </section>
         <section id="project-showcase">@include('partials.projects-scroll')</section>
+
+    <div class="blur-lock">
         <section id="contact">@include('partials.contact')</section>
     </div>
-
+    
     <!-- Footer -->
     @include('partials.footer')
 
