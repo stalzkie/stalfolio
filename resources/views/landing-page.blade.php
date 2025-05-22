@@ -65,7 +65,7 @@
     @include('partials.footer')
 
     <!-- Floating Login Button -->
-    <a href="{{ route('google.login') }}" class="floating-login">sign in with google for full access.</a>
+    <a href="{{ route('google.login') }}" class="floating-login">sign in with google for pinboard.</a>
 
     <!-- JS Logic for Navbar Scrollspy -->
     @include('partials.scripts')
