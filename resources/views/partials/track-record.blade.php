@@ -91,17 +91,18 @@
     <div class="relative w-full overflow-hidden">
       <div class="scroll-track flex gap-16 min-w-max animate-scroll px-20">
         <!-- Logos and Placeholders -->
+        <img src="/images/logos/businessintelligence.png" class="h-24 w-auto" alt="Business Intelligence">
         <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
         <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
         <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
         <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
-        <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+        <img src="/images/logos/businessintelligence.png" class="h-24 w-auto" alt="Business Intelligence">
         <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
         <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
-        <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+        <img src="/images/logos/businessintelligence.png" class="h-24 w-auto" alt="Business Intelligence">
         <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
         <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
-        <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
+        <img src="/images/logos/businessintelligence.png" class="h-24 w-auto" alt="Business Intelligence">
         <img src="/images/logos/businessanalysis.svg" class="h-24 w-auto" alt="Business Analysis">
         <div class="h-24 w-24 rounded-full bg-gray-300 border-2 border-black flex items-center justify-center text-black font-bold text-xl">?</div>
       </div>
